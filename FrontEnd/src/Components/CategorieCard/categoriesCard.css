@@ -1,0 +1,28 @@
+.categories-card{
+  background-color: var(--green-color);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+.categories-card h2{
+  font-size: 30px;
+}
+.categories-card svg{
+  font-size: 50px;
+  font-size: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+.categories-card:hover  svg{
+  transform: translateY(-20px);
+  border-color:white;
+}

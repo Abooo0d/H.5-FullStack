@@ -1,0 +1,17 @@
+.dashboard-card{
+  padding:20px;
+  background-color:white;
+  font-family: arial;
+  font-weight:bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  flex-direction: column;
+  position: relative;
+}
+.dashboard-card h1{
+  color:var(--magenta-color);
+  text-align: center;
+  font-size:40px;
+}

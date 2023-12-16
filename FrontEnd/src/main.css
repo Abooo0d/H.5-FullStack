@@ -1,0 +1,27 @@
+:root{
+  --background-color:rgb(243 244 246);
+  --card-color:white;
+  --main-dark-color:rgb(22 40 66);
+  --magenta-color:rgb(79 70 229);
+  --green-color:#64CCC5;
+  --blue-color:rgb(0 126 255);
+  --red-color:crimson;
+  --text-color:#aaa;
+}
+::-webkit-scrollbar{
+  width:8px;
+  background-color:white;
+}
+::-webkit-scrollbar-track{
+  background-color:white;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(22 40 66 / 95%);
+}
+body{
+  margin:0;
+  padding:0;
+  background-color:var(--background-color);
+  font-family: arial;
+  overflow-x: hidden;
+}
