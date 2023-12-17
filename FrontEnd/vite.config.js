@@ -6,7 +6,7 @@ export default defineConfig({
   // base: "/dashboard",
   plugins: [react()],
   server: {
-    host: "192.168.105.179",
-    port: 5000,
+    host: "192.168.105.159",
+    port: 3000,
   },
 });

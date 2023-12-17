@@ -16,17 +16,18 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 40px;
   max-height: 600px;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  margin-top: 20px;
+  overflow: hidden;
 }
 .login-form form {
-  width:100%;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   gap: 10px;
-
+  height: 400px;
+  overflow-y: scroll;
 }
 .login-form img{
   height:70px;
@@ -99,6 +100,9 @@
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   font-size: 18px;
-  width: 100%;
+  width: 80%;
   text-align: center;
+}
+.login-form form .error p{
+  color:white;
 }

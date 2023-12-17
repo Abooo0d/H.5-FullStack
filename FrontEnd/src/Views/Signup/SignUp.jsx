@@ -3,12 +3,15 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axiosClient from "../../AxiosClient/axiosClient";
 import router from "../../router";
+import Spinner from "../../Components/Spinner/Spinner";
 function SignUp() {
   const [user, setUser] = useState();
   const [password, setPassword] = useState();
   const [passwordConf, setPasswordConf] = useState();
   const [error, setError] = useState();
+  const [loading, setLoading] = useState(false);
   const SendData = (ev) => {
+    setLoading(true);
     ev.preventDefault();
     if (password === passwordConf) {
       axiosClient
@@ -21,6 +24,9 @@ function SignUp() {
         })
         .catch((err) => {
           setError(err.response.data.errors);
+        })
+        .finally(() => {
+          setLoading(false);
         });
     }
   };
@@ -66,6 +72,7 @@ function SignUp() {
           <p>{error.password}</p>
         </div>
       )}
+      {loading && <Spinner />}
     </>
   );
 }
