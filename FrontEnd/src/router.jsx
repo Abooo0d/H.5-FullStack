@@ -1,4 +1,8 @@
-import { Navigate, createBrowserRouter } from "react-router-dom";
+import {
+  Navigate,
+  createBrowserRouter,
+  createHashRouter,
+} from "react-router-dom";
 import HomePage from "./Views/HomePage/HomePage";
 import Dashboard from "./Views/DashBoard/Dashboard";
 import View from "./Views/View/View";
@@ -9,7 +13,7 @@ import Login from "./Views/Login/Login";
 import GustLayout from "./Views/GustLayout/GustLayout";
 import SignUp from "./Views/Signup/SignUp";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <View />,
