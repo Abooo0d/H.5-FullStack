@@ -1,0 +1,77 @@
+.footer {
+  background-image: url(/src/Assets/Images/photo_2023-12-20_13-52-06.jpg);
+  background-position-y: -390px;
+  height: 200px;
+}
+.footer .footer-overlay {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(22 40 66 / 87%);
+  height: 200px;
+}
+.footer .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .logo img {
+  height: 50px;
+}
+.footer .logo h3 {
+  font-family: arial;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+  color: var(--green-color);
+}
+.footer .links {
+  min-height: 160px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.footer .links a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.footer .links a:hover {
+  color: var(--green-color);
+  transform: translateX(20px);
+}
+.footer .footer-categories {
+  min-height: 160px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.subtitle {
+  color: var(--green-color);
+  font-size: 20px;
+  margin: 0;
+  width: fit-content;
+}
+.footer .footer-accounts .accounts-con {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+.footer .copy {
+  width: 100%;
+  color: white;
+  background-color: var(--main-dark-color);
+  text-align: center;
+  padding: 5px;
+  font-family: arial;
+  font-size: 15px;
+}
+.footer .copy span {
+  color: var(--green-color);
+  font-weight: bold;
+}

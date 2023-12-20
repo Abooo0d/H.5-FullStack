@@ -1,0 +1,20 @@
+.mini-contact {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(0 0 0 / 20%);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--green-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.mini-contact:hover {
+  transform: translateY(-20px);
+}
+.mini-contact svg {
+  font-size: 20px;
+  text-align: center;
+}

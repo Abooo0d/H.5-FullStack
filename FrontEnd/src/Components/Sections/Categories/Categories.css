@@ -1,6 +1,11 @@
 .categories {
   background-color: white;
   padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
 }
 .categories .categories-con {
   display: flex;
