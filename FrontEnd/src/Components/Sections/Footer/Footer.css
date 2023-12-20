@@ -1,7 +1,10 @@
 .footer {
   background-image: url(/src/Assets/Images/photo_2023-12-20_13-52-06.jpg);
   background-position-y: -390px;
-  height: 200px;
+  min-height: 200px;
+}
+.footer .footer-section {
+  width: 250px;
 }
 .footer .footer-overlay {
   display: flex;
@@ -9,7 +12,9 @@
   align-items: center;
   flex-wrap: wrap;
   background-color: rgb(22 40 66 / 87%);
-  height: 200px;
+  min-height: 200px;
+  gap: 20px;
+  padding: 20px 0;
 }
 .footer .logo {
   display: flex;
@@ -24,7 +29,7 @@
   font-family: arial;
   font-size: 30px;
   text-align: center;
-  margin-top: 10px;
+  margin: 10px 0;
   color: var(--green-color);
 }
 .footer .links {
@@ -74,4 +79,15 @@
 .footer .copy span {
   color: var(--green-color);
   font-weight: bold;
+}
+@media screen and (max-width: 750px) {
+  .footer {
+    background-position-y: -250px;
+  }
+  .footer .links {
+    align-items: center;
+  }
+  .footer .footer-categories {
+    align-items: center;
+  }
 }

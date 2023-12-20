@@ -3,14 +3,12 @@
   justify-content: flex-start;
   align-items: center;
   color: white;
-  /* border-bottom: 1px solid transparent; */
   transition: 0.3s;
   padding: 5px;
   width: 100%;
   cursor: pointer;
 }
 .mini-category:hover {
-  /* border-color: var(--green-color); */
   color: var(--green-color);
   transform: translateX(20px);
 }
@@ -21,4 +19,9 @@
 .mini-category svg {
   transition: 0.3s;
   margin-right: 10px;
+}
+@media screen and (max-width: 750px) {
+  .mini-category {
+    justify-content: center;
+  }
 }

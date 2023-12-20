@@ -12,7 +12,7 @@
   transition: 0.3s;
 }
 .mini-contact:hover {
-  transform: translateY(-20px);
+  transform: translateY(-10px);
 }
 .mini-contact svg {
   font-size: 20px;
