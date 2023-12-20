@@ -23,7 +23,15 @@ function SignUp() {
           router.navigate("/dashboard");
         })
         .catch((err) => {
-          setError(err.response.data.errors);
+          const finalErrors = [
+            err.response.data.errors
+              ? [
+                  err.response.data.errors.name,
+                  err.response.data.errors.password,
+                ]
+              : [err.response.data.message, err.response.data.error],
+          ];
+          setError(finalErrors);
         })
         .finally(() => {
           setLoading(false);
@@ -68,8 +76,9 @@ function SignUp() {
       </form>
       {error && (
         <div className="error">
-          <p>{error.name}</p>
-          <p>{error.password}</p>
+          {error.map((value, index) => (
+            <p key={index}>{value}</p>
+          ))}
         </div>
       )}
       {loading && <Spinner />}

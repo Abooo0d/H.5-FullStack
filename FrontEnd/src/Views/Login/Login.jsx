@@ -5,7 +5,6 @@ import axiosClient from "../../AxiosClient/axiosClient";
 import router from "../../router";
 import Spinner from "../../Components/Spinner/Spinner";
 import axios from "axios";
-// import "./login.css";
 function Login() {
   const [user, setUser] = useState();
   const [password, setPassword] = useState();
@@ -23,12 +22,12 @@ function Login() {
         router.navigate("/dashboard");
       })
       .catch((err) => {
+        console.log(err);
         const finalErrors = [
-          err.response.data.message,
-          err.response.data.errors.name,
-          err.response.data.errors.password,
+          err.response.data.errors
+            ? [err.response.data.errors.name, err.response.data.errors.password]
+            : [err.response.data.message, err.response.data.error],
         ];
-        console.log(finalErrors);
         setError(finalErrors);
       })
       .finally(() => {
@@ -63,7 +62,6 @@ function Login() {
         </p>
         {error && (
           <div className="error">
-            Abood
             {error.map((value, index) => (
               <p key={index}>{value}</p>
             ))}
