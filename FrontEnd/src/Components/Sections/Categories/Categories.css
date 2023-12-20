@@ -1,14 +1,17 @@
-.categories{
+.categories {
   background-color: white;
   padding: 50px 0;
 }
-.categories .categories-con{
-  display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+.categories .categories-con {
+  display: flex;
   gap: 20px;
   padding-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.categories a{
+.categories a {
   text-decoration: none;
+  width: 220px;
 }

@@ -1,19 +1,19 @@
-.our-feature{
+.our-feature {
   padding: 50px 0;
 }
-.our-features-con{
+.our-features-con {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 40px;
 }
-.label{
+.label {
   color: var(--green-color);
   font-size: 40px;
   text-align: center;
 }
-.desc{
+.desc {
   color: var(--text-color);
   text-align: center;
   width: 80%;
@@ -22,8 +22,11 @@
   text-align: center;
   margin: 35px auto 20px;
 }
-.our-features-con .feature-con{
-  display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+.our-features-con .feature-con {
+  display: flex;
   gap: 20px;
+  padding-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }

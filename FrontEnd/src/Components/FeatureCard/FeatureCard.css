@@ -1,4 +1,4 @@
-.feature-card{
+.feature-card {
   background-color: white;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -9,14 +9,16 @@
   align-items: center;
   flex-direction: column;
   position: relative;
+  width: 300px;
+  height: 320px;
 }
-.feature-card h1{
+.feature-card h1 {
   color: var(--green-color);
   font-size: 33px;
   margin-bottom: 10px;
   margin-top: 50px;
 }
-.feature-card svg{
+.feature-card svg {
   padding: 20px;
   background-color: var(--green-color);
   border-radius: 50%;
@@ -28,7 +30,7 @@
   color: white;
   border: 5px solid white;
 }
-.feature-card p{
+.feature-card p {
   color: var(--text-color);
   text-align: center;
   line-height: 1.6;

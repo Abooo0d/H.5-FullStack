@@ -1,9 +1,15 @@
 import React from "react";
-import "./Quote";
+import image from "../../../Assets/Images/quote.png";
+import "./Quote.css";
 const Quote = () => {
   return (
     <div className="quote">
-      <div className="text">The Most Important Thing Is Trust</div>
+      <div className="quote-overlay">
+        <div className="text">
+          "Elevate your style with our curated collection of chic clothes and
+          shoes. Unleash your fashion journey with us today!"
+        </div>
+      </div>
     </div>
   );
 };

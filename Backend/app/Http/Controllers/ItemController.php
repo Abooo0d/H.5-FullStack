@@ -37,8 +37,9 @@ class ItemController extends Controller
         }
         $uploadedFile->move($absolutePath, $filename);
       }
-    } /** @var Item $item */
-    $data["image"] = $relativePath;
+      $data["image"] = $relativePath;
+    }
+    /** @var Item $item */
     $item = Item::create($data);
     return new ItemResource($item);
   }

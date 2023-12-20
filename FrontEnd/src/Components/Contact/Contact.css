@@ -1,0 +1,37 @@
+.contact {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  width: 150px;
+  height: 150px;
+  background-color: var(--green-color);
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  padding: 20px;
+}
+.contact:hover {
+  background-color: white;
+  border-color: var(--green-color);
+  transform: translateY(-30px);
+}
+.contact:hover h3,
+.contact:hover svg {
+  color: var(--green-color);
+}
+.contact h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+  margin: 0;
+}
+.contact svg {
+  color: white;
+  font-size: 40px;
+  transition: 0.3s;
+}
