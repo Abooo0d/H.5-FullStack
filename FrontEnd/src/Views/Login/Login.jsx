@@ -22,7 +22,6 @@ function Login() {
         router.navigate("/dashboard");
       })
       .catch((err) => {
-        console.log(err);
         const finalErrors = [
           err.response.data.errors
             ? [err.response.data.errors.name, err.response.data.errors.password]
