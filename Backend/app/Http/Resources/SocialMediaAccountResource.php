@@ -14,11 +14,11 @@ class SocialMediaAccountResource extends JsonResource
    */
   public function toArray(Request $request): array
   {
-      return [
-        "instagram" => $this->instagram,
-        "telegram" => $this->telegram,
-        "whatsapp" => $this->whatsapp,
-        "tiktok" => $this->tiktok,
-      ];
+    return [
+      "instagram" => $this->instagram,
+      "telegram" => $this->telegram,
+      "whatsapp" => $this->whatsapp,
+      "tiktok" => $this->tiktok,
+    ];
   }
 }
